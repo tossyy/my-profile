@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toshiki Katsube | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="nav-logo">TK</a>
+        <ul class="nav-links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#research">Research</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Toshiki Katsube</h1>
+      <p class="hero-subtitle">東京大学 / The University of Tokyo</p>
+      <p class="hero-description">
+        モバイルアプリ開発・コンピュータビジョン・自然言語処理に興味を持つエンジニア。<br>
+        個人開発したiOSアプリを複数リリースし、研究では大規模日本語Vision &amp; Languageデータセットの構築に取り組んでいます。
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-subtitle">個人開発したiOSアプリ・制作物</p>
+
+      <div class="projects-grid">
+
+        <!-- AsTalk -->
+        <article class="project-card">
+          <div class="project-card__image">
+            <img src="assets/images/astalk-screenshot.png" alt="AsTalk screenshot" loading="lazy">
+          </div>
+          <div class="project-card__content">
+            <div class="project-card__header">
+              <img src="assets/images/astalk-icon.png" alt="AsTalk icon" class="project-card__icon">
+              <div>
+                <h3 class="project-card__title">AsTalk（アストーク）</h3>
+                <span class="project-card__category">iOS App</span>
+              </div>
+            </div>
+            <p class="project-card__description">
+              AIを活用した英語スピーキング練習アプリ。自分の言葉で日本語を録音し、AIが翻訳・フィードバックを提供。
+              文ごとの発音練習、フルスピーチ練習、コミュニティ機能を搭載。
+            </p>
+            <div class="project-card__tech">
+              <span class="tag">React Native</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Expo</span>
+              <span class="tag">Google Cloud Functions</span>
+              <span class="tag">Firestore</span>
+              <span class="tag">Gemini API</span>
+              <span class="tag">Firebase Auth</span>
+            </div>
+            <ul class="project-card__features">
+              <li>Google Gemini による音声文字起こし・翻訳・フィードバック生成</li>
+              <li>文単位 / フルスピーチの2段階練習モード</li>
+              <li>学習進捗トラッキング・コミュニティ共有機能</li>
+              <li>RevenueCat によるサブスクリプション管理</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="https://apps.apple.com/jp/app/%E3%82%A2%E3%82%B9%E3%83%88%E3%83%BC%E3%82%AF/id6756672054" class="btn btn-sm" target="_blank" rel="noopener">App Store</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Command Golf -->
+        <article class="project-card">
+          <div class="project-card__image">
+            <img src="assets/images/commandgolf-screenshot.png" alt="Command Golf screenshot" loading="lazy">
+          </div>
+          <div class="project-card__content">
+            <div class="project-card__header">
+              <img src="assets/images/commandgolf-icon.png" alt="Command Golf icon" class="project-card__icon">
+              <div>
+                <h3 class="project-card__title">Command Golf</h3>
+                <span class="project-card__category">iOS App</span>
+              </div>
+            </div>
+            <p class="project-card__description">
+              最小コマンド数でゴールを目指すプログラミングパズルゲーム。
+              ビジュアルブロックエディタでコマンドを組み、ループ・条件分岐を駆使して最短解を狙う。
+            </p>
+            <div class="project-card__tech">
+              <span class="tag">React Native</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Expo</span>
+            </div>
+            <ul class="project-card__features">
+              <li>FORWARD / TURN / LOOP / IF 等のブロックベースコマンド</li>
+              <li>50以上の手作りステージ + ランダム生成モード</li>
+              <li>3段階スター評価によるスコアリング</li>
+              <li>テレポーター・スイッチ等のギミック</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="https://apps.apple.com/jp/app/command-golf/id6757800921" class="btn btn-sm" target="_blank" rel="noopener">App Store</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Bookkeeping -->
+        <article class="project-card">
+          <div class="project-card__image">
+            <img src="assets/images/bookkeeping-screenshot.png" alt="簿記3級 screenshot" loading="lazy">
+          </div>
+          <div class="project-card__content">
+            <div class="project-card__header">
+              <img src="assets/images/bookkeeping-icon.png" alt="簿記3級 icon" class="project-card__icon">
+              <div>
+                <h3 class="project-card__title">東大生が作った簿記3級</h3>
+                <span class="project-card__category">iOS App</span>
+              </div>
+            </div>
+            <p class="project-card__description">
+              日商簿記3級の合格を6〜8週間で目指す学習アプリ。
+              5段階カリキュラム、SM-2アルゴリズムによる間隔反復、模擬試験モードを搭載。
+            </p>
+            <div class="project-card__tech">
+              <span class="tag">React Native</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Expo</span>
+              <span class="tag">Zustand</span>
+            </div>
+            <ul class="project-card__features">
+              <li>仕訳・勘定・決算の3セクション対応の問題演習</li>
+              <li>SM-2アルゴリズムによるスペースドリピティション</li>
+              <li>カテゴリ別弱点分析・合格予測</li>
+              <li>60分制限の模擬試験モード</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="https://apps.apple.com/jp/app/%E6%9D%B1%E5%A4%A7%E7%94%9F%E3%81%8C%E4%BD%9C%E3%81%A3%E3%81%9F%E7%B0%BF%E8%A8%983%E7%B4%9A/id6757947471" class="btn btn-sm" target="_blank" rel="noopener">App Store</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- SyncCube -->
+        <article class="project-card">
+          <div class="project-card__image">
+            <img src="assets/images/synccube-screenshot.png" alt="SyncCube screenshot" loading="lazy">
+          </div>
+          <div class="project-card__content">
+            <div class="project-card__header">
+              <div class="project-card__icon project-card__icon--placeholder">SC</div>
+              <div>
+                <h3 class="project-card__title">SyncCube</h3>
+                <span class="project-card__category">個人制作</span>
+              </div>
+            </div>
+            <p class="project-card__description">
+              K-POPミュージックビデオからメンバーの個別カットを自動抽出し、3Dキューブの各面に映す
+              インタラクティブ映像ビジュアライゼーションシステム。
+              IMUセンサーによるリアルタイム視点制御に対応。
+            </p>
+            <div class="project-card__tech">
+              <span class="tag">Python</span>
+              <span class="tag">OpenGL</span>
+              <span class="tag">InsightFace</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">PySerial</span>
+            </div>
+            <ul class="project-card__features">
+              <li>InsightFaceによる顔認識・メンバー識別</li>
+              <li>コサイン類似度 + 多数決投票によるトラッキング</li>
+              <li>OpenGLテクスチャマッピングによるキューブレンダリング</li>
+              <li>マイコンIMUデータによるリアルタイム回転制御</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="https://github.com/katsube-toshiki/SyncCube" class="btn btn-sm" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Research -->
+  <section id="research" class="section section--alt">
+    <div class="container">
+      <h2 class="section-title">Research</h2>
+      <p class="section-subtitle">学術研究</p>
+
+      <article class="research-card">
+        <div class="research-card__content">
+          <h3 class="research-card__title">DEJIMA: A Large-Scale Japanese Vision &amp; Language Dataset</h3>
+          <p class="research-card__venue">LREC 2026 &mdash; The University of Tokyo &amp; RIKEN</p>
+          <p class="research-card__authors">Toshiki Katsube et al.</p>
+          <p class="research-card__description">
+            日本語のVision-and-Language研究における大規模データ不足を解決するためのデータセット。
+            Web収集・物体検出・LLMの3段階パイプラインにより、388万件の画像テキストペアを構築。
+            既存データセットの24〜39倍の規模を実現し、日本文化に根ざした自然な日本語キャプション・VQAを提供。
+          </p>
+          <div class="research-card__image">
+            <img src="assets/images/dejima-pipeline.svg" alt="DEJIMA pipeline" loading="lazy">
+          </div>
+          <div class="research-card__stats">
+            <div class="stat">
+              <span class="stat__value">3.88M</span>
+              <span class="stat__label">画像テキストペア</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value">24-39x</span>
+              <span class="stat__label">既存データセット比</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value">79%</span>
+              <span class="stat__label">日本視覚ドメインカバー率</span>
+            </div>
+          </div>
+          <div class="project-card__tech">
+            <span class="tag">CLIP</span>
+            <span class="tag">RAM</span>
+            <span class="tag">Grounding DINO</span>
+            <span class="tag">LLM</span>
+            <span class="tag">LLaVA</span>
+            <span class="tag">Common Crawl</span>
+          </div>
+          <div class="research-card__links">
+            <a href="https://arxiv.org/abs/2512.00773" class="btn btn-sm" target="_blank" rel="noopener">Paper (arXiv)</a>
+            <a href="https://huggingface.co/datasets/MIL-UT/DEJIMA-dataset" class="btn btn-sm" target="_blank" rel="noopener">Dataset (HuggingFace)</a>
+            <a href="https://github.com/mil-tokyo/DEJIMA-construct" class="btn btn-sm" target="_blank" rel="noopener">Code (GitHub)</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Toshiki Katsube. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
