@@ -85,8 +85,10 @@ h2 {
   padding: 12px;
 }
 
-.app-visual img {
+.app-visual img,
+.app-visual video {
   border-radius: 4px;
+  width: 100%;
 }
 
 .app-icon {
