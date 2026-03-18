@@ -21,9 +21,51 @@
 
     <hr>
 
-    <!-- Apps -->
+    <!-- Research -->
     <section>
-      <h2>iOS Apps</h2>
+      <h2>Research</h2>
+
+      <div class="research">
+        <h3>DEJIMA: A Large-Scale Japanese Vision & Language Dataset</h3>
+        <p class="venue">国際学会 LREC 2026 にて発表予定 — The University of Tokyo & RIKEN</p>
+        <p>
+          日本語のVision-and-Language研究向けに、388万件の画像テキストペアからなるデータセットを構築した。
+          Web収集→物体検出→LLMの3段階パイプラインで、既存の日本語データセットの24〜39倍の規模を実現。
+        </p>
+        <img src="assets/images/dejima-pipeline.svg" alt="DEJIMA pipeline" class="research-img">
+        <p class="tech">CLIP / RAM / Grounding DINO / LLM / LLaVA / Common Crawl</p>
+        <div class="research-links">
+          <a href="https://arxiv.org/abs/2512.00773" target="_blank" rel="noopener">Paper</a>
+          <a href="https://huggingface.co/datasets/MIL-UT/DEJIMA-dataset" target="_blank" rel="noopener">Dataset</a>
+          <a href="https://github.com/mil-tokyo/DEJIMA-construct" target="_blank" rel="noopener">Code</a>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Projects -->
+    <section>
+      <h2>修士1年</h2>
+
+      <div class="app">
+        <div class="app-visual">
+          <img src="assets/images/syntopic.1781ee81.svg" alt="SynTopic">
+        </div>
+        <div class="app-info">
+          <h3>SynTopic</h3>
+          <p>
+            業務の中で生まれる情報や暗黙知を構造化・活用するSaaS。
+            日々の会話やメモから情報同士の関係性を保ったまま構造化し再利用可能にすることで、
+            情報収集・蓄積にかかる時間を削減し、本来注力すべき意思決定に集中できる環境を実現する。
+            修士課程で SynTopic 株式会社の立ち上げに参画し、蓄積された情報を活用する AI Agent の開発を担当。
+            ユーザーの入力や行動履歴から文脈を理解し必要な情報を提示するロジックの設計・実装に加え、
+            情報を価値に変換するプロダクト体験の設計にも関与した。
+          </p>
+          <p class="tech">React (Remix) / TypeScript / NestJS / PostgreSQL / Temporal / Weaviate</p>
+          <a href="https://syntopic.io/ja/" target="_blank" rel="noopener">Website</a>
+        </div>
+      </div>
 
       <div class="app">
         <div class="app-visual">
@@ -83,25 +125,8 @@
 
     <hr>
 
-    <!-- SyncCube -->
     <section>
-      <h2>Other Projects</h2>
-
-      <div class="app">
-        <div class="app-visual">
-          <video src="assets/videos/cansat.mp4" autoplay muted loop playsinline></video>
-        </div>
-        <div class="app-info">
-          <h3>CanSat ローバー制御</h3>
-          <p>
-            ドローンから投下後、自律的にゴールまで走行するローバーの制御プログラム。
-            気圧・光・加速度センサーによる冗長な落下判定、GPS＋カルマンフィルタによるナビゲーション、
-            PID制御、障害物回避、カメラによるゴール色検出と重心追従を実装。
-            第18回能代宇宙イベント「目的地点到達競技」全国2位。
-          </p>
-          <p class="tech">Raspberry Pi / Python / GPS / IMU / OpenCV / PID制御 / WebUI</p>
-        </div>
-      </div>
+      <h2>学部3年</h2>
 
       <div class="app">
         <div class="app-visual">
@@ -135,23 +160,22 @@
 
     <hr>
 
-    <!-- Research -->
     <section>
-      <h2>Research</h2>
+      <h2>学部2年</h2>
 
-      <div class="research">
-        <h3>DEJIMA: A Large-Scale Japanese Vision & Language Dataset</h3>
-        <p class="venue">LREC 2026 — The University of Tokyo & RIKEN</p>
-        <p>
-          日本語のVision-and-Language研究向けに、388万件の画像テキストペアからなるデータセットを構築した。
-          Web収集→物体検出→LLMの3段階パイプラインで、既存の日本語データセットの24〜39倍の規模を実現。
-        </p>
-        <img src="assets/images/dejima-pipeline.svg" alt="DEJIMA pipeline" class="research-img">
-        <p class="tech">CLIP / RAM / Grounding DINO / LLM / LLaVA / Common Crawl</p>
-        <div class="research-links">
-          <a href="https://arxiv.org/abs/2512.00773" target="_blank" rel="noopener">Paper</a>
-          <a href="https://huggingface.co/datasets/MIL-UT/DEJIMA-dataset" target="_blank" rel="noopener">Dataset</a>
-          <a href="https://github.com/mil-tokyo/DEJIMA-construct" target="_blank" rel="noopener">Code</a>
+      <div class="app">
+        <div class="app-visual">
+          <video src="assets/videos/cansat.mp4" autoplay muted loop playsinline></video>
+        </div>
+        <div class="app-info">
+          <h3>CanSat ローバー制御</h3>
+          <p>
+            ドローンから投下後、自律的にゴールまで走行するローバーの制御プログラム。
+            気圧・光・加速度センサーによる冗長な落下判定、GPS＋カルマンフィルタによるナビゲーション、
+            PID制御、障害物回避、カメラによるゴール色検出と重心追従を実装。
+            第18回能代宇宙イベント「目的地点到達競技」全国2位。
+          </p>
+          <p class="tech">Raspberry Pi / Python / GPS / IMU / OpenCV / PID制御 / WebUI</p>
         </div>
       </div>
     </section>
